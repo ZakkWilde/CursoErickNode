@@ -1,0 +1,25 @@
+O que .Net, JAVA, PHP, Python ou Ruby tem em comum ? 
+
+Ambas são blocantes. 
+
+No final de 2009, Ryan Dahl com a ajuda inicial de 14 colaboradores criou o nodejs. 
+
+Engine V8. 
+
+Blocking-Thread 
+
+Clusterização Node.js 
+
+Multi tread X Single thread . 
+
+event-loop. 
+
+commonJs
+
+F10       - Pula função 
+F11       - Entra na função 
+Shift+F11 - Executa e volta.
+F5        - Executa tudo. 
+
+
+
