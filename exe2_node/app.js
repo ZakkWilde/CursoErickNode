@@ -1,16 +1,20 @@
 var http = require('http');
+var express = require('express');
+var app = express();
 
-var server = http.createServer(function(request, response){
-    // console.log('Passou por aqui');
-    // response.end('Vai bilola!!!');
-    if(request.url == '/editar'){
-        response.end('<html><body><h1>Bem vindo ao Bilola - Edite sua pagina</h1></body></html>');
-    }
-    else{
-        response.end('<html><body><h1>Bem vindo ao Bilola Master</h1></body></html>');
-    }
-    
+app.set('view engine', 'ejs')
+
+app.get('/', function(req,res){
+    res.render("index");
 });
-server.listen(3000);
-console.log('Servidor no ar');
+
+app.get('/editar', function(req,res){
+    res.render("editar");
+});
+
+app.listen(3000, function(){
+    console.log('A bilola esta de pé, e agora com Nodemon');
+});
 //comentario que o erick pediu.
+//res.end('<html><body><h1>Bem vindo ao Bilola Master</h1></body></html>');
+//res.end('<html><body><h1>Bem vindo ao Bilola - Edite sua pagina</h1></body></html>');
